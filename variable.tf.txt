@@ -1,0 +1,33 @@
+variable "aws_access_id" {
+  description = "aws access id key"
+}
+
+variable "aws_secret_key" {
+  description = "aws secret key"
+}
+
+variable "region" {
+ description = "AWS region for hosting our your network"
+ default = "ap-south-1"
+}
+
+variable "project-id" {
+  description = "Project ID under which EC2 instances should be created"
+}
+
+variable "db-name" {
+  description = "Db name"
+  default = ""
+}
+
+variable "db-user" {
+  description = "User for db"
+  default = ""
+}
+
+variable "db-password" {
+  description = "Password for db"
+  default = ""
+}
+
+
